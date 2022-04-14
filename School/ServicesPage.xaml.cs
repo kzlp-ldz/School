@@ -16,14 +16,14 @@ using System.Windows.Shapes;
 namespace School
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для ServicesPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class ServicesPage : Page
     {
-        public MainWindow()
+        public ServicesPage()
         {
             InitializeComponent();
-            MainFrame.NavigationService.Navigate(new ServicesPage());
+            ServiceList.ItemsSource = bd_connection.school.Service.ToList();
         }
     }
 }
