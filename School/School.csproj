@@ -64,6 +64,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AddServis.xaml.cs">
+      <DependentUpon>AddServis.xaml</DependentUpon>
+    </Compile>
     <Compile Include="bd_connection.cs" />
     <Compile Include="Client.cs">
       <DependentUpon>School.tt</DependentUpon>
@@ -116,6 +119,10 @@
     <Compile Include="Tag.cs">
       <DependentUpon>School.tt</DependentUpon>
     </Compile>
+    <Page Include="AddServis.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
